@@ -6,7 +6,7 @@ def buscaMenor(arr):
     menor = arr[0]
     menor_indice = 0
 
-    for i in range(1, len(arr)):
+    for i in range(2, len(arr)):
         print(f"Esse é o I: {i}")
         if arr[i] < menor:
 
@@ -23,5 +23,6 @@ def ordenacaoporSelecao(arr):
         menor = buscaMenor(arr)
         novoArr.append(arr.pop(menor))
     return novoArr
+
 
 print(ordenacaoporSelecao([5, 3 ,6, 2, 10]))
